@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.css">
     <link rel="icon" href="../images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/product.css">
 </head>
 <body class="bg-dark text-light">
     <nav class="navbar navbar-dark bg-dark">
@@ -25,17 +26,49 @@
         </div>
     </nav>
     
-
+    <div class="product-container">
+        <div class="product-buy-image_container">
+            <img src="../images/cs2.jpg" alt="" class="product-image">
+            <div class="product-buy_container">
+                <h2 class="product-buy_title">Counter Strike 2</h2>
+                <div class="search-select">
+                    <select class="form-control">
+                        <option selected>PC</option>
+                        <option>PS5</option>
+                        <option>Xbox Series X</option>
+                        <option>Nintendo Switch</option>
+                    </select>
+                </div>
+                <h5 class="product-buy_price">$99.99</h5>
+                <button type="button" class="product-buy_button" data-bs-toggle="modal" data-bs-target="#exampleModal">Procesar compra</button>
+            </div>
+        </div>
+        <div class="product-info_container">
+            <h3 class="product-info_title">Acerca de</h3>
+            <p class="product-info_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus consequuntur eos tempora maiores, delectus veritatis! Suscipit, molestias odit corporis alias obcaecati vero magnam qui dolor dolores delectus modi itaque accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati, itaque corporis eligendi accusamus similique architecto vero cum dolorem corrupti, beatae, quos vel. Magnam quibusdam assumenda eius? Et, alias reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quas earum ducimus deleniti quidem ipsum ipsam, sit nisi. Porro nulla totam expedita eveniet, blanditiis incidunt! Exercitationem aperiam quibusdam similique saepe! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae illum maxime est. Fuga harum quisquam officia similique cupiditate quasi cumque eum, ea sed molestiae dicta vel, ullam amet saepe quo?</p>
+        </div>
+        <div class="product-requirements_container">
+            <h3>Requisitos minimos</h3>
+            <p>
+                SO: Windows® 10. <br>
+                Procesador: CPU de 4 subprocesos - Intel® Core™ i5 750 o superior.<br>
+                Memoria: 8 GB de RAM<br>
+                Gráficos: La tarjeta gráfica de ser de al menos 1 GB y debe ser compatible con DirectX 11 y Shader Model 5.0.<br>
+                DirectX: Versión 11<br>
+                Almacenamiento: 85 GB de espacio disponible<br>
+            </p>
+        </div>
+    </div>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content bg-dark text-light">
                 <div class="modal-header border-bottom border-secondary">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Producto añadido</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Compra exitosa</h1>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Se ha añadido el producto al carrito con exito!
+                    La compra del producto ha sido exitosa!
                 </div>
                 <div class="modal-footer border-top border-secondary">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -49,7 +82,7 @@
         <p>&copy; 2024-2025. Grupo 12. Accesibildad. Grado en Ingeniería Informática (Universidad de León).</p>
     </footer>
 
-    <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>

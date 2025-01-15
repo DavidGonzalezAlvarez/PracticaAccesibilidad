@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.search-filter {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 50px 40px;
+}
+
+.product-card {
+    background-color: #343a40;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 15px;
+    color: #fff;
+}
+
+.boton-login {
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-left: 15px;
+}
+
+.boton-carrito {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.container-products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 50px 100px;
+}
+
+.product-card{
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden; 
+    margin: 30px;
+    cursor: pointer;
+    box-shadow: 5px 4px 8px rgb(0, 0, 0, 0.425); /* Sombra */
+}
+
+.product-card:hover{
+    box-shadow: 5px 4px 8px rgba(255, 255, 255, 0.2); /* Sombra */
+}
+
+.product-img{
+    object-fit: cover; 
+}
+
+.product-info{
+    display: grid;
+    grid-template-columns: 10% 65% 25%;
+    align-items: center;
+    margin: 0 10px;
+} 
+
+.product-price{
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.search-texto{
+    margin: 0 15px 0 0;
+}
+
+.search-select{
+    margin: 0 0 0 15px;
+}
+
+.form-control{
+    font-size: 1.2em;
+    font-weight: 500;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.form-control::placeholder{
+    color: #fff;
+}
+
+.navbar-brand{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.boton-añadir-carrito{
+    border: none;
+    background: none;
+    padding: 0;
+}

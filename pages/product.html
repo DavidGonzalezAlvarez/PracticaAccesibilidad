@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelKeys</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body class="bg-dark text-light">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo.png" alt="Logo" width="30" height="24" class="d-inline-block">
+                PixelKeys
+            </a>
+            <div class="d-flex">
+                <button id="boton-perfil" class="btn btn-outline-light me-2 boton-login" type="button">Perfil</button>
+                <button class="boton-carrito">
+                    <img src="../images/carrito.svg" alt="Carrito">
+                </button>
+                <button id="boton-login" class="btn btn-outline-light me-2 boton-login" type="button">Login</button>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-bottom border-secondary">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Producto añadido</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Se ha añadido el producto al carrito con exito!
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024-2025. Grupo 12. Accesibildad. Grado en Ingeniería Informática (Universidad de León).</p>
+    </footer>
+
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

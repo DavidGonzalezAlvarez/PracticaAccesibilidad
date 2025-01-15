@@ -1,0 +1,21 @@
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 8px;
+    background: none;
+}
+
+.login-form{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    margin: 10px 30px;
+}
+
+.button-login{
+    margin: 30px 30px;
+}

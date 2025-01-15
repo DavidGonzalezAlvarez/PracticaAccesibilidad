@@ -18,7 +18,7 @@
             </a>
             <div class="d-flex">
                 <button id="boton-perfil" class="btn btn-outline-light me-2 boton-login" type="button">Perfil</button>
-                <button class="boton-carrito">
+                <button class="boton-carrito" id="boton-carrito">
                     <img src="../images/carrito.svg" alt="Carrito">
                 </button>
                 <button id="boton-login" class="btn btn-outline-light me-2 boton-login" type="button">Login</button>
@@ -69,6 +69,71 @@
                 </div>
                 <div class="modal-body">
                     La compra del producto ha sido exitosa!
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carrito" id="carrito">
+        <h2 class="carrito-title">Carrito de la compra</h2>
+        <div class="carrito-container">
+            <div class="carrito-product">
+                <img src="../images/cs2.jpg" alt="" class="carrito-product_img">
+                <h4 class="carrito-product_title">Counter Strike 2</h4>
+                <h4 class="carrito-product_price">$99.99</h4>
+                <button class="carrito-product_delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../images/cruz.svg" alt="" class="carrito-product_delete_img"></button>
+            </div>
+            <div class="carrito-product">
+                <img src="../images/cs2.jpg" alt="" class="carrito-product_img">
+                <h4 class="carrito-product_title">Counter Strike 2</h4>
+                <h4 class="carrito-product_price">$99.99</h4>
+                <button class="carrito-product_delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../images/cruz.svg" alt="" class="carrito-product_delete_img"></button>
+            </div>
+            <div class="carrito-product">
+                <img src="../images/cs2.jpg" alt="" class="carrito-product_img">
+                <h4 class="carrito-product_title">Counter Strike 2</h4>
+                <h4 class="carrito-product_price">$99.99</h4>
+                <button class="carrito-product_delete"  data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../images/cruz.svg" alt="" class="carrito-product_delete_img"></button>
+            </div>
+            <div class="carrito-product">
+                <img src="../images/cs2.jpg" alt="" class="carrito-product_img">
+                <h4 class="carrito-product_title">Counter Strike 2</h4>
+                <h4 class="carrito-product_price">$99.99</h4>
+                <button class="carrito-product_delete"  data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../images/cruz.svg" alt="" class="carrito-product_delete_img"></button>
+            </div>
+            <button type="button" class="carrito-process" data-bs-toggle="modal" data-bs-target="#buyModal">Procesar compra</button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-bottom border-secondary">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Compra exitosa</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    La compra de los productos ha sido exitosa!
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-bottom border-secondary">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de la compra</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Se ha eliminado el producto del carrito con exito!
                 </div>
                 <div class="modal-footer border-top border-secondary">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>

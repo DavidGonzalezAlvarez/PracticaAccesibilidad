@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 footer {
@@ -99,4 +100,59 @@ footer {
     border: none;
     background: none;
     padding: 0;
+}
+
+.carrito{
+    background-color: #000000cb;
+    border: 2px solid #000;
+    color: #ffffff;
+    position: absolute;
+    top: 65px;
+    right: -510px;
+    width: 500px;
+    height: 550px;
+}
+
+.carrito-container{
+    display: grid;
+}
+
+.carrito-product{
+    display: grid;
+    grid-template-columns: 25% 50% 15% 10%;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 15px;
+    margin: 0 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fff;
+}
+
+.carrito-product_img{
+    width: 100px;
+}
+
+.carrito-product_delete{
+    background: none;
+    border: none;
+}
+
+.carrito-title{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.carrito-process{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: none;
+    color: #fff;
+    align-self: center;
+    margin: 30px;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+.carrito-process:hover{
+    background: #272727;
 }

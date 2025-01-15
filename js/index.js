@@ -2,6 +2,8 @@ const boton_login = document.getElementById("boton-login");
 const boton_perfil = document.getElementById("boton-perfil");
 const productos = document.querySelectorAll(".product-card");
 const botones_carrito = document.querySelectorAll(".boton-añadir-carrito");
+const boton_carrito = document.getElementById("boton-carrito");
+const carrito = document.getElementById("carrito");
 
 boton_login.addEventListener("click", function() {
     window.location.href = "../pages/login.html";
@@ -25,4 +27,12 @@ botones_carrito.forEach(button => {
         console.log("Producto añadido al carrito");
         // Aquí puedes agregar la lógica para añadir el producto al carrito
     });
+});
+
+boton_carrito.addEventListener("click", function() {
+    if (carrito.style.right === '25px') {
+        carrito.style.right = '-510px';
+    } else {
+        carrito.style.right = '25px';
+    }
 });
